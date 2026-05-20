@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kubheka Ntokozo</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #333; }
+        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #333; padding-bottom: 15px; }
+        .logo-box { border: 2px solid #333; padding: 5px 15px; font-weight: bold; }
+        nav a { margin-left: 20px; text-decoration: none; color: #333; font-size: 1.1rem; }
+        nav a:hover { text-decoration: underline; }
+        
+        main { margin: 30px 0; max-width: 600px; }
+        h2 { color: #111; border-left: 4px solid #333; padding-left: 10px; }
+        
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; border: 2px solid #333; font-family: inherit; font-size: 1rem; box-sizing: border-box; }
+        textarea { resize: vertical; }
+        button { background: #333; color: #fff; border: none; padding: 12px 24px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.2s ease; }
+        button:hover { background: #555; }
+        
+        footer { border-top: 2px solid #333; padding-top: 20px; margin-top: 40px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .footer-left, .footer-center, .footer-right { flex: 1; min-width: 250px; margin-bottom: 20px; }
+        .social-icons { margin-top: 15px; }
+        .social-icons a { display: inline-block; width: 35px; height: 35px; line-height: 35px; text-align: center; border: 2px solid #333; border-radius: 50%; text-decoration: none; color: #333; margin-right: 10px; }
+        .map-box { border: 2px solid #333; border-radius: 8px; padding: 5px; background: #eee; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">KN</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="contactus.html"><strong>Contact Us</strong></a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Have an inquiry or want to discuss full-stack or system design opportunities? Drop your details below or email directly at <strong>ntokozokubheka48@gmail.com</strong>.</p>
+        
+        <form action="mailto:ntokozokubheka48@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="userName">FullName / Organization:</label>
+                <input type="text" id="userName" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="userEmail">Email Address:</label>
+                <input type="email" id="userEmail" name="email" required placeholder="example@domain.com">
+            </div>
+            <div class="form-group">
+                <label for="userMessage">Message:</label>
+                <textarea id="userMessage" name="message" rows="6" required placeholder="Type your project overview or message here..."></textarea>
+            </div>
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p><strong>Address:</strong> Johannesburg, Gauteng, South Africa</p>
+            <p><strong>Phone:</strong> +27 63 986 6255</p>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank">T</a>
+                <a href="https://facebook.com" target="_blank">F</a>
+                <a href="https://instagram.com" target="_blank">I</a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <p><strong>additional quick links</strong></p>
+            <p>• <a href="https://github.com" target="_blank" style="color: #333;">Official GitHub Profile</a></p>
+        </div>
+        <div class="footer-right">
+            <div class="map-box">
+                <p style="margin: 5px 0; font-size: 0.85rem; font-weight: bold;">Gauteng Location Map</p>
+                <iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="110" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

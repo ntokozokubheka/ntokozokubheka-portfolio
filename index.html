@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubheka Ntokozo - Portfolio</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #333; }
+        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #333; padding-bottom: 15px; }
+        .logo-box { border: 2px solid #333; padding: 5px 15px; font-weight: bold; letter-spacing: 1px; }
+        nav a { margin-left: 20px; text-decoration: none; color: #333; font-size: 1.1rem; }
+        nav a:hover { text-decoration: underline; }
+        
+        .hero-section { text-align: center; margin: 25px 0; border: 2px solid #333; padding: 20px; background-color: #fafafa; }
+        .hero-section h3 { margin-top: 0; }
+        
+        .bio-container { display: flex; justify-content: space-between; align-items: center; margin: 40px 0; gap: 40px; }
+        .bio-text { width: 65%; }
+        .bio-text h1 { margin-top: 0; font-size: 2.5rem; color: #111; }
+        .profile-img-container { width: 30%; text-align: center; }
+        .profile-img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 2px solid #333; }
+        
+        footer { border-top: 2px solid #333; padding-top: 20px; margin-top: 40px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .footer-left, .footer-center, .footer-right { flex: 1; min-width: 250px; margin-bottom: 20px; }
+        .social-icons { margin-top: 15px; }
+        .social-icons a { display: inline-block; width: 35px; height: 35px; line-height: 35px; text-align: center; border: 2px solid #333; border-radius: 50%; text-decoration: none; color: #333; font-weight: bold; margin-right: 10px; }
+        .social-icons a:hover { background-color: #333; color: #fff; }
+        .map-box { border: 2px solid #333; border-radius: 8px; padding: 5px; background: #eee; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-box">KN</div>
+        <nav>
+            <a href="index.html"><strong>Home</strong></a>
+            <a href="aboutme.html">About me</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+            <h3>Featured Project Showcase: Ubuntu Book Store Demonstration</h3>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <iframe 
+                    width="100%" 
+                    height="400" 
+                    src="https://www.youtube.com/embed/btD9nHWLnjI" 
+                    title="Featured Project Showcase: Ubuntu Book Store Demonstration" 
+                    style="border: 2px solid #333; background: #000;" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        <section class="bio-container">
+            <div class="bio-text">
+                <h1>Kubheka Ntokozo</h1>
+                <p><strong>Your bio</strong> - I am a dedicated Full-Stack Software Developer with an analytical background holding a BSc in Mathematics with Informatics. With hands-on internship experience optimizing corporate application layers and implementing strict architecture standards, I thrive on building secure, distributed software solutions.</p>
+                <p>From engineering backend architectures in ASP.NET Core and Java to building responsive frontends in React and Angular, I love turning complex business requirements into clean, scalable software systems.</p>
+            </div>
+            <div class="profile-img-container">
+                <img class="profile-img" src="images/37531253.jpg" alt="Kubheka Ntokozo Profile Image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p><strong>Address:</strong> Johannesburg, Gauteng, South Africa</p>
+            <p><strong>Phone:</strong> +27 63 986 6255</p>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank" title="Twitter">T</a>
+                <a href="https://facebook.com" target="_blank" title="Facebook">F</a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">I</a>
+            </div>
+        </div>
+        <div class="footer-center">
+            <p><strong>additional quick links</strong></p>
+            <p>• <a href="https://github.com" target="_blank" style="color: #333;">Official GitHub Profile</a></p>
+            <p>• <a href="aboutme.html" style="color: #333;">Technical Stack & Qualifications</a></p>
+        </div>
+        <div class="footer-right">
+            <div class="map-box">
+                <p style="margin: 5px 0; font-size: 0.85rem; font-weight: bold;">Gauteng Location Map</p>
+                <iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="110" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
