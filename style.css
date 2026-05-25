@@ -1,0 +1,232 @@
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 15px; 
+    line-height: 1.6; 
+    color: #333; 
+}
+
+header { 
+    display: flex; 
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 15px; 
+}
+
+.logo-box { 
+    border: 2px solid #333; 
+    padding: 5px 15px; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a { 
+    text-decoration: none; 
+    color: #333; 
+    font-size: 1rem; 
+}
+
+nav a:hover { 
+    text-decoration: underline; 
+}
+
+/* Hero Video Section */
+.hero-section { 
+    text-align: center; 
+    margin: 25px 0; 
+    border: 2px solid #333; 
+    padding: 15px; 
+    background-color: #fafafa; 
+}
+
+.hero-section h3 { 
+    margin-top: 0; 
+    font-size: 1.2rem;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #333; 
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+/* Bio Section (Mobile First: Stacked) */
+.bio-container { 
+    display: flex; 
+    flex-direction: column-reverse; /* Put image on top on mobile, text below */
+    align-items: center; 
+    margin: 30px 0; 
+    gap: 25px; 
+}
+
+.bio-text { 
+    width: 100%; 
+    text-align: center;
+}
+
+.bio-text h1 { 
+    margin-top: 0; 
+    font-size: 2rem; 
+    color: #111; 
+}
+
+.profile-img-container { 
+    width: 100%; 
+    text-align: center; 
+}
+
+.profile-img { 
+    width: 180px; 
+    height: 180px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #333; 
+}
+
+/* Footer Section */
+footer { 
+    border-top: 2px solid #333; 
+    padding-top: 20px; 
+    margin-top: 40px; 
+    display: flex; 
+    flex-direction: column; /* Stacked layout for mobile */
+    gap: 20px;
+}
+
+.footer-left, .footer-center, .footer-right { 
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons { 
+    margin-top: 15px; 
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a { 
+    display: inline-block; 
+    width: 35px; 
+    height: 35px; 
+    line-height: 35px; 
+    text-align: center; 
+    border: 2px solid #333; 
+    border-radius: 50%; 
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    margin: 0 5px; 
+}
+
+.social-icons a:hover { 
+    background-color: #333; 
+    color: #fff; 
+}
+
+.map-box { 
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    padding: 5px; 
+    background: #eee; 
+    text-align: center; 
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        margin: 30px;
+    }
+
+    header { 
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    nav {
+        gap: 0;
+    }
+
+    nav a { 
+        margin-left: 20px; 
+        font-size: 1.1rem; 
+    }
+
+    .hero-section h3 { 
+        font-size: 1.5rem;
+    }
+
+    .bio-container { 
+        flex-direction: row; 
+        justify-content: space-between; 
+        margin: 40px 0; 
+        gap: 40px; 
+    }
+
+    .bio-text { 
+        width: 65%; 
+        text-align: left;
+    }
+
+    .bio-text h1 { 
+        font-size: 2.5rem; 
+    }
+
+    .profile-img-container { 
+        width: 30%; 
+    }
+
+    .profile-img { 
+        width: 220px; 
+        height: 220px; 
+    }
+
+    footer { 
+        flex-direction: row;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    .footer-left, .footer-center, .footer-right { 
+        flex: 1; 
+        min-width: 220px; 
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+    
+    .social-icons a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .map-box {
+        margin: 0;
+    }
+}
